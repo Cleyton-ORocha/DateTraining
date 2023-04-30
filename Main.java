@@ -12,12 +12,14 @@ public class Main {
 		
 		LocalDate d4 = LocalDate.parse("2022-02-07");
 		LocalDateTime d5 = LocalDateTime.parse("2021-04-24T02:45:08");
+		Instant d6 = Instant.parse("2021-04-24T02:45:08Z");
 		
 		System.out.println("d1 = " + d1.toString());
 		System.out.println("d2 = " + d2.toString());
 		System.out.println("d3 = " + d3.toString());
 		System.out.println("d4 = " + d4.toString());
 		System.out.println("d5 = " + d5.toString());
+		System.out.println("d6 = " + d6.toString());
 
 	}
 
