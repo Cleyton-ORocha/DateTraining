@@ -1,6 +1,7 @@
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
 public class Main {
@@ -9,7 +10,7 @@ public class Main {
 		
 		DateTimeFormatter  dtf1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		DateTimeFormatter  dtf2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
-
+		DateTimeFormatter  dtf3 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());
 		//https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html
 		
 		LocalDate d1 = LocalDate.now();
@@ -28,6 +29,8 @@ public class Main {
 		LocalDateTime d11 = LocalDateTime.of(2023, 9, 20, 1, 50);
 		
 		LocalDate d12 = LocalDate.of(2023, 9, 20);
+		LocalDateTime d13 = LocalDateTime.of(2023, 9, 20, 1, 50);
+
 		
 
 		System.out.println("d1 = " + d1.toString());
@@ -42,6 +45,9 @@ public class Main {
 		System.out.println("d10 = " + d10.toString());
 		System.out.println("d11 = " + d11.toString());
 		System.out.println("d12 = " + d12.format(dtf1));
+		System.out.println("d13 = " + d13.format(dtf3));
+
+		
 
 
 
