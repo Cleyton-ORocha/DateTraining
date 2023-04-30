@@ -31,6 +31,7 @@ public class Main {
 		LocalDate d12 = LocalDate.of(2023, 9, 20);
 		LocalDateTime d13 = LocalDateTime.of(2023, 9, 20, 1, 50);
 
+		LocalDate d14 = LocalDate.parse("2022-02-07");
 		
 
 		System.out.println("d1 = " + d1.toString());
@@ -47,8 +48,9 @@ public class Main {
 		System.out.println("d12 = " + d12.format(dtf1));
 		System.out.println("d13 = " + d13.format(dtf3));
 
-		
-
+		System.out.println(d14.minusDays(1));
+		System.out.println(d14.minusMonths(1));
+		System.out.println(d14.minusWeeks(1));
 
 
 
