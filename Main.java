@@ -51,6 +51,10 @@ public class Main {
 		System.out.println(d14.minusDays(1));
 		System.out.println(d14.minusMonths(1));
 		System.out.println(d14.minusWeeks(1));
+		
+		System.out.println(d14.plusDays(1));
+		System.out.println(d14.plusMonths(1));
+		System.out.println(d14.plusWeeks(1));
 
 
 
